@@ -75,6 +75,29 @@ Safety first. The application includes a mandatory epilepsy warning due to the h
 
 ---
 
+## 📱 Build for Android (Play Store)
+
+To build the application for the Google Play Store:
+
+1.  **Sync the project**
+    ```bash
+    npm run build
+    npx cap sync
+    ```
+
+2.  **Open in Android Studio**
+    ```bash
+    npx cap open android
+    ```
+
+3.  **Build Signed Bundle**
+    -   In Android Studio, go to **Build > Generate Signed Bundle / APK**.
+    -   Select **Android App Bundle** (AAB) for Play Store.
+    -   Create a new keystore and follow the prompts.
+    -   Upload the generated `.aab` file to the Google Play Console.
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
